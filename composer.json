@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-upstreams/drupal-composer-managed",
+    "name": "suupstream-upstreams/drupal-composer-managed",
     "description": "Install Drupal 9 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
@@ -241,7 +241,8 @@
         "drupal/webprofiler": "^10.1",
         "drupal/weight": "^3.2",
         "mglaman/composer-drupal-lenient": "^1.0",
-        "scssphp/scssphp": "^1.11"
+        "scssphp/scssphp": "^1.11",
+        "pantheon-systems/upstream-management": "^1.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -299,7 +300,10 @@
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true,
+            "mglaman/composer-drupal-lenient": true,
+            "pantheon-systems/upstream-management": true
         }
     }
 }
