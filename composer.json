@@ -87,10 +87,7 @@
             "composer/installers": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "mglaman/composer-drupal-lenient": true,
-            "php-http/discovery": false,
-            "phpstan/extension-installer": false
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }
