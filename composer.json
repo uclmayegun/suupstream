@@ -20,7 +20,9 @@
         "drupal/core-recommended": "^10.1.7",
         "pantheon-systems/drupal-integrations": "^9",
         "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^11 || ^12"
+        "drush/drush": "^11 || ^12",
+        "mglaman/composer-drupal-lenient": "^1.0",
+        "drupal/jsonapi_earlyrendering_workaround": "^1.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10.1.7"
@@ -58,7 +60,13 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "drupal-lenient": {
+            "allowed-list": [
+                "drupal/token",
+                "drupal/jsonapi_earlyrendering_workaround"
+            ]
+        }
     },
     "autoload": {
         "classmap": ["upstream-configuration/scripts/ComposerScripts.php"]
